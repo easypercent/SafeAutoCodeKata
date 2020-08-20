@@ -1,0 +1,83 @@
+<h1 class="display-4"><strong>Rules for uploaded files</strong></h1>
+
+<div>
+    <p>The uploaded file must be a text file (.txt) with any name and of any size.</p>
+    <p>The files must be formatted such that</p>
+    <ul>
+        <li>
+            Each line is blank/empty or contains a single command followed by its parameters
+        </li>
+        <li>
+            The two allowed commands are <em>Driver</em> and <em>Trip</em>
+        </li>
+        <li>
+            The parameters for each command are space delimited and no extra information should be included after the
+            parameters
+        </li>
+    </ul>
+
+    <p>For the <em>Driver</em> command, the parameter in order are</p>
+    <ul>
+        <li>
+            name: a string value that represent the driver's name
+        </li>
+    </ul>
+
+    <p>For the <em>Trip</em> command, the parameter in order are</p>
+    <ul>
+        <li>
+            driversName: a string value the represents the name of the driver who took this trip
+        </li>
+        <li>
+            startTime: a time value of the form mm::ss that represents the start time of the trip
+        </li>
+        <li>
+            stopTime: a time value of the form mm::ss that represents the stop time of the trip
+        </li>
+        <li>
+            milesDriven: a number value that represents the number of miles driven during the trip
+        </li>
+    </ul>
+
+    <p>Here's an example file:</p>
+    <pre><blockquote class="blockquote">
+Driver Dan
+
+Driver Alex
+
+Driver Bob
+
+Trip Dan 07:15 07:45 17.3
+
+Trip Dan 06:12 06:32 21.8
+
+Trip Alex 12:01 13:16 42.0
+    </blockquote></pre>
+
+    <p>Which would produce the following output:</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Miles Driven</th>
+                <th scope="col">Average Mpg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alex</td>
+                <td>42</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Dan</td>
+                <td>39</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
