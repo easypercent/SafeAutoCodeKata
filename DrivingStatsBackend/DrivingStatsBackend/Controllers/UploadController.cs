@@ -28,6 +28,9 @@ namespace DrivingStatsBackend.Controllers
 
         private static UploadReport GenerateReportFrom(IFormFile fileSelect)
         {
+            string extension = Path.GetExtension(fileSelect.FileName);
+            if (!extension.Equals(".txt")) return UploadController.Error("File uploaded didn't have .txt extension. Found '" + extension + "'.");
+
             // transfer file to text
             using var reader = new StreamReader(fileSelect.OpenReadStream());
             var text = new StringBuilder();
