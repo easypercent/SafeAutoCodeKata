@@ -15,7 +15,7 @@ The *DrivingStatsBackend* is a Dotnet Core Web Api project programmed in Visual 
 
 Open the *DrivingStatsBackend* solution in Visual Studio and run it under Debug configuration. Then, open the *driving-stats-frontend* folder in a command line and run "ng serve --open". The backend should be running on https://localhost:44315. The frontend should be running on https://localhost:4200.
 
-Now, with the angular project open, use the *Upload* page to upload any one of the .txt files in this project's root directory or your own, and test the output.
+Now, with the angular project open, use the *Upload* page to upload any one of the .txt files in this project's *testfiles* directory or your own, and test the output.
 
 Note, there is no .gitignore files in this repository as of now. This mean it is not necessary to run npm install inside the Angular project.
 
