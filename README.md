@@ -17,9 +17,15 @@ Open the *DrivingStatsBackend* solution in Visual Studio and run it under Debug 
 
 Now, with the angular project open, use the *Upload* page to upload any one of the .txt files in this project's root directory or your own, and test the output.
 
+Note, there is no .gitignore files in this repository as of now. This mean it is not necessary to run npm install inside the Angular project.
+
 ## Rules for Uploaded Files
 
 The formatting rules for uploaded file can be found on the *Rules* page of the Angular website.
+
+## Expansion
+
+This project is rudimentary and can be expanded upon. The next thing I would have liked to have added is a way to download the reports from the website instead of only showing them on a page. The instructions aren't specific, but since the files are uploaded, it would have also been nice to have the option to download the reports.
 
 ## Rules from SafeAuto
 
